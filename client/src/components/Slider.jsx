@@ -7,32 +7,56 @@ import sliderItems from '../data.js'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const variants = {
-  initial: {
-      x: 200,
-      opacity: 0,
+  enter: direction => {
+    return {
+      x: direction > 0 ? -1000 : 1000,
+      opacity: 0
+    };
   },
   animate: {
     x: 0,
     opacity: 1,
+    transition: {
+      x: { type: 'spring', stiffness: 300, damping: 30 },
+      opacity: { duration: 0.2 },
+    }
   },
-  exit: {
-      x: -200,
+  exit: direction => {
+    return {
+      x: direction < 0 ? 1000 : -1000,
       opacity: 0,
-  },
-}
+      transition: {
+        x: { type: 'spring', stiffness: 300, damping: 30 },
+        opacity: { duration: 0.2 },
+      }
+    };
+  }
+};
 
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [direction, setDirection] = useState(0)
+
 
   const nextSlide = () => {
-    currentIndex === sliderItems.length - 1 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1)
+    setDirection(1)
+    if (currentIndex === sliderItems.length - 1) {
+      setCurrentIndex(0)
+      return
+    }
+    setCurrentIndex(currentIndex + 1)
   }
 
   const prevSlide = () => {
-    currentIndex === 0 ? setCurrentIndex(sliderItems.length - 1) : setCurrentIndex(currentIndex - 1)
+    setDirection(-1)
+    if (currentIndex === 0) {
+      setCurrentIndex(sliderItems.length - 1)
+      return
+    }
+    setCurrentIndex(currentIndex - 1)
   }
-
+  
 
   return (
     
@@ -53,20 +77,20 @@ const Slider = () => {
           <ArrowBackIosNewRoundedIcon />
       </IconButton>
       <div style={{ width: "100%", height: "100%" }}>
-        <AnimatePresence initial={false} custom={currentIndex}>
+        <AnimatePresence initial={false} custom={direction}>
           <motion.img 
             variants={variants}
-            src={sliderItems[currentIndex].img}
-            alt="slides"
             initial="initial"
             animate="animate"
             exit="exit"
-            transition={{
-              x: { type: "spring", stiffness: 300, damping: 30 },
-              opacity: { duration: 0.2 }
-            }}
-            key={sliderItems[currentIndex]}
-            style={{width: "100%", objectFit: "cover" }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            src={sliderItems[currentIndex].img}
+            alt="slides"
+            key={sliderItems[currentIndex].id}
+            custom={direction}
+            style={{minWidth: "100%", objectFit: "cover" }}
           />
         </AnimatePresence>
       </div>
