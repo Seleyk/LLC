@@ -1,6 +1,7 @@
 import { useMediaQuery } from '@mui/material'
 import React from 'react'
 import Bestsellers from '../components/Bestsellers'
+import Categories from '../components/Categories'
 import Navbar from '../components/Navbar'
 import Slider from '../components/Slider'
 
@@ -13,6 +14,7 @@ const Home = () => {
         <Navbar />
         { isNonMobileScreen && <Slider />}
         <Bestsellers />
+        <Categories />
     </div>
   )
 }

@@ -66,3 +66,21 @@ export const bestGloves = [
   },
 ]
 
+export const categories = [
+  {
+    id: 1,
+    img: "https://cdn.shopify.com/s/files/1/0253/7245/9094/files/best_yokkao_muay_thai_shorts.jpg?v=1625624890",
+    title: "BEST GEAR",
+  },
+  {
+    id: 2,
+    img: "https://whitewolffit.com/wp-content/uploads/2020/11/def.png",
+    title: "TRAIN STRONG",
+  },
+  {
+    id: 3,
+    img: "https://cdn.shopify.com/s/files/1/0611/0868/2943/products/muay-thai-graphic-t-shirt-king-killers-2.jpg?v=1669387394",
+    title: "WINNING STYLE",
+  },
+];
+

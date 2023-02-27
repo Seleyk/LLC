@@ -14,7 +14,7 @@ const Bestsellers = () => {
 
   return (
     <div style={{ padding: "2rem 0",  }}>
-        <Typography variant="h3" sx={{ textAlign: "center" }}> Our <br /> Best Selling <br /> Gloves </Typography>
+        <Typography variant="h3" sx={{ textAlign: "center", mb: "1rem" }}>BEST SELLING <br /> MUAY THAI BOXING GLOVES </Typography>
         <hr style={{ width: "70%", margin: "auto" }} ></hr>
 
         <motion.div ref={carousel} whileTap={{ cursor: "grabbing" }}  style={{ cursor: "grab", overflow: "hidden" }}>
