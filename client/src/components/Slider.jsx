@@ -3,7 +3,7 @@ import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRound
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import IconButton from '@mui/material/IconButton';
 import SlideContainer from '../styledComponents/SlideContainer';
-import sliderItems from '../data.js' 
+import { sliderItems } from '../data.js' 
 import { AnimatePresence, motion } from 'framer-motion'
 
 const variants = {
