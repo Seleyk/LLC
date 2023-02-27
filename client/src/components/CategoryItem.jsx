@@ -1,8 +1,7 @@
-import { Button, Grid, useMediaQuery } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import React from 'react';
 
 const CategoryItem = ({ item }) => {
-  const isNonMobileScreen = useMediaQuery("(min-width: 1000px)")
 
 
   return (
