@@ -1,21 +1,21 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://c4.wallpaperflare.com/wallpaper/750/437/191/fighter-muay-thai-kneed-wallpaper-preview.jpg",
+      img: "https://e0.pxfuel.com/wallpapers/698/29/desktop-wallpaper-thai-kickboxing-computer-background-cool.jpg",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://coolwallpapers.me/th700/5724846-muay-thai-boxing-wallpapers.jpg",
+      img: "https://e1.pxfuel.com/desktop-wallpaper/315/633/desktop-wallpaper-muay-thai-thai-boxing.jpg",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "https://e0.pxfuel.com/wallpapers/698/29/desktop-wallpaper-thai-kickboxing-computer-background-cool.jpg",
+      img: "https://wallpapercave.com/wp/wp4420997.jpg",
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
@@ -83,4 +83,56 @@ export const categories = [
     title: "WINNING STYLE",
   },
 ];
+
+export const popularProducts = [
+  {
+    id:1,
+    img:"https://www.punchequipment.com/wp-content/uploads/2021/12/3-3.png",
+  },
+  {
+    id:2,
+    img:"https://c8s4a5n7.rocketcdn.me/wp-content/uploads/2022/04/Top-King-Muay-Thai-Shorts-TKTBS-051-White-.jpeg",
+  },
+  {
+    id:3,
+    img:"https://cdn.shopify.com/s/files/1/1955/8565/products/blackHoodieBack_MuayThai_5000x.jpg?v=1607389637",
+  },
+  {
+    id:4,
+    img:"https://cdn.shopify.com/s/files/1/0224/6724/8200/products/shin-guards-muay-thai-yokkao-matrix-orchid-bloom-1_1000x.jpg?v=1626958435",
+  },
+  {
+    id:5,
+    img:"https://m.media-amazon.com/images/I/81xN2Wi1YVL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    id:6,
+    img:"https://cdn.shopify.com/s/files/1/0067/5076/5129/products/KPLC2_shot5_600x.jpg?v=1599150348",
+  },
+  {
+    id:7,
+    img:"https://m.media-amazon.com/images/I/61AjOz64MmL._AC_UL1000_.jpg",
+  },
+  {
+    id:8,
+    img:"https://m.media-amazon.com/images/I/719L3bqb+DS._AC_SX425_.jpg",
+  },
+  {
+    id:9,
+    img:"https://www.punchequipment.com/wp-content/uploads/2021/12/3-3.png",
+  },
+  {
+    id:10,
+    img:"https://c8s4a5n7.rocketcdn.me/wp-content/uploads/2022/04/Top-King-Muay-Thai-Shorts-TKTBS-051-White-.jpeg",
+  },
+  {
+    id:11,
+    img:"https://cdn.shopify.com/s/files/1/1955/8565/products/blackHoodieBack_MuayThai_5000x.jpg?v=1607389637",
+  },
+  {
+    id:12,
+    img:"https://cdn.shopify.com/s/files/1/0224/6724/8200/products/shin-guards-muay-thai-yokkao-matrix-orchid-bloom-1_1000x.jpg?v=1626958435",
+  },
+]
+
 

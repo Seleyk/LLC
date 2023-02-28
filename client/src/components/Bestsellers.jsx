@@ -1,9 +1,12 @@
 import { motion } from "framer-motion"
-import { Typography } from "@mui/material"
+import { Typography, useMediaQuery } from "@mui/material"
 import { bestGloves } from "../data"
 import { useEffect, useRef, useState } from "react"
 
 const Bestsellers = () => {
+    const isNonMobileScreen = useMediaQuery("(min-width: 1000px)")
+
+
     const [width, setWidth] = useState(0)
     const carousel = useRef()
 
@@ -14,8 +17,8 @@ const Bestsellers = () => {
 
   return (
     <div style={{ padding: "2rem 0",  }}>
-        <Typography variant="h3" sx={{ textAlign: "center", mb: "1rem" }}>BEST SELLING <br /> MUAY THAI BOXING GLOVES </Typography>
-        <hr style={{ width: "70%", margin: "auto" }} ></hr>
+        <Typography letterSpacing={3}  fontSize={ isNonMobileScreen ? "40px" : "20px"} sx={{ textAlign: "center", m: "1rem 0" }}>BEST SELLING <br /> MUAY THAI BOXING GLOVES </Typography>
+        {/* <hr style={{ width: "70%", margin: "auto" }} ></hr> */}
 
         <motion.div ref={carousel} whileTap={{ cursor: "grabbing" }}  style={{ cursor: "grab", overflow: "hidden" }}>
             <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} style={{ display: "flex" }}>

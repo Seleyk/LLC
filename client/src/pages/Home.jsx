@@ -3,6 +3,7 @@ import React from 'react'
 import Bestsellers from '../components/Bestsellers'
 import Categories from '../components/Categories'
 import Navbar from '../components/Navbar'
+import Products from '../components/Products'
 import Slider from '../components/Slider'
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         { isNonMobileScreen && <Slider />}
         <Bestsellers />
         <Categories />
+        <Products />
     </div>
   )
 }
