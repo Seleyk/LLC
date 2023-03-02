@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Anouncement = () => {
+const Announcement = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", color: "white", height: "40px",  padding: "12px 15px", letterSpacing: ".2rem", textTransform: "uppercase", background: "rgb(25, 118, 210)"  }}>
        <p>
@@ -10,4 +10,4 @@ const Anouncement = () => {
   )
 }
 
-export default Anouncement
+export default Announcement
