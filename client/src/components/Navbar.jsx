@@ -30,7 +30,7 @@ const Navbar = () => {
               <TextField label="Search..." variant="standard" size='small' margin='dense' color="info" />
             </Box>
           </Container>
-          <Container style={{ flex: 1, textAlign: "center" }}> <Typography fontSize={ isNonMobileScreen ? "30px" : "20px"} textTransform="uppercase" fontWeight="bold" > Fight Shop </Typography> </Container>
+          <Container style={{ flex: 1, textAlign: "center" }}> <Typography fontSize={ isNonMobileScreen ? "30px" : "14px"} textTransform="uppercase" fontWeight="bold" > Fight Shop </Typography> </Container>
             {isNonMobileScreen ? (
               <Container style={{ flex: 1, display: "flex", alignItems: 'center', justifyContent: "flex-end", gap: "1rem"  }}>  
                 <PersonOutlineOutlinedIcon fontWeight='bold' sx={{ cursor: "pointer", color: "black"}} />
