@@ -9,9 +9,11 @@ const App = () => {
     <div>
         <Navbar />
         <Stack direction='row' sx={{ mt: "10px" }} >
-           <Sidebar /> 
-           <Home />
+          <Sidebar /> 
+          <Home />
+
         </Stack>
+
     </div>
   )
 }
