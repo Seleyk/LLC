@@ -14,16 +14,15 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { sliderItems } from '../data';
 
 function Copyright(props) {
     return (
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
         {'Copyright © '}
         <Link color="inherit" href="#">
-          Fight Shop
+          {`Fight Shop`}
         </Link>
-        {new Date().getFullYear()}
+        {` ${new Date().getFullYear()}`}
       </Typography>
     );
   }
@@ -75,7 +74,7 @@ const Login = () => {
                 alignItems: "center",
                 }}
             >
-                <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+                <Avatar sx={{ m: 1, bgcolor: "rgb(25, 118, 210)" }}>
                 <LockOutlinedIcon />
                 </Avatar>
 
@@ -151,7 +150,7 @@ const Login = () => {
                 alignItems: 'center',
                 }}
             >
-                <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                <Avatar sx={{ m: 1, bgcolor: "rgb(25, 118, 210)" }}>
                 <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">

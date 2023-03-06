@@ -1,14 +1,12 @@
 import Announcement from '../components/Announcement';
 import Navbar from '../components/Navbar';
-import { useState } from 'react';
 import Footer from "../components/Footer"
 import Products from '../components/Products';
 import { Box } from "@mui/material";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import { useMediaQuery } from '@mui/material'
 
 
